@@ -2,31 +2,23 @@
 Management of Data Science and Business Workflows
 ## Install Apache Airflow
 
-To install Apache Airflow on Unix-like operating systems, follow these steps:
-
-1. Create a folder for Airflow files:
-
-   
+# 1. Create a folder for your Airflow files:
 mkdir ~/airflow
 
+# 2. Change to the Airflow directory:
+cd ~/airflow
 
-3. Change to the newly created directory:
+# 3. Create a Python virtual environment:
+python -m venv ./
 
-   
- cd ~/airflow
-4. Set up a Python virtual environment:
-   python -m venv ./
-
-   
-5. Activate the Python environment:
-
-
+# 4. Activate the Python environment:
 source bin/activate
 
-6. Define the Airflow home environment variable:
+# 5. Set the AIRFLOW_HOME environment variable:
+export AIRFLOW_HOME=~/airflow
 
-   
-export AIRFLOW_HOME=~/airflow   6. Install Apache Airflow by following the detailed instructions provided in the official documentation:
+# 6. Install Apache Airflow by following the detailed instructions provided in the official documentation:
 - [Apache Airflow Installation Guide](https://airflow.apache.org/docs/apache-airflow/stable/start.html) (Refer to steps 2-4 for detailed installation instructions).
 
 Please ensure you follow the steps in the Airflow documentation carefully to successfully install and configure Apache Airflow.
+
